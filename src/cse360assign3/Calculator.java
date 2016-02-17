@@ -1,4 +1,7 @@
-
+/*
+ * This version only exists so I can follow along with the tutorial.
+ * Aside from this comment, it is unchanged from the initial version.
+ */
 package cse360assign3;
 /**
  * Creates a calculator that allows for adding, subtracting, multiplying, and dividing.
