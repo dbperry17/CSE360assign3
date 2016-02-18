@@ -1,7 +1,3 @@
-/*
- * This version only exists so I can follow along with the tutorial.
- * Aside from this comment, it is unchanged from the initial version.
- */
 package cse360assign3;
 /**
  * Creates a calculator that allows for adding, subtracting, multiplying, and dividing.
@@ -31,7 +27,7 @@ public class Calculator
 	 */
 	public int getTotal ()
 	{
-		return 0;
+		return total;
 	}
 	
 	
@@ -42,7 +38,7 @@ public class Calculator
 	 */
 	public void add (int value)
 	{
-		
+		total += value;
 	}
 	
 	
@@ -53,7 +49,7 @@ public class Calculator
 	 */
 	public void subtract (int value)
 	{
-		
+		total -= value;
 	}
 	
 	
@@ -64,18 +60,22 @@ public class Calculator
 	 */
 	public void multiply (int value)
 	{
-		
+		total *= value;
 	}
 	
 	
 	/**
-	 * divide - divides the total by an integer
+	 * divide - divides the total by an integer. If a zero is passed in,
+	 * 			the total is reset to 0. 
 	 * 
 	 * @param value	The divisor
 	 */
 	public void divide (int value)
 	{
-		
+		if(value == 0)
+			total = 0;
+		else
+			total /= value;
 	}
 	
 	
